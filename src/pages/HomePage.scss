@@ -1,0 +1,10 @@
+@use "./styles/partials/colors" as *;
+@use "./styles/partials/fonts.scss" as *;
+
+
+.home{
+    &-container {
+        margin-top: -2rem;
+        background-color: $background-navy;
+    }
+}
