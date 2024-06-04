@@ -5,6 +5,16 @@
 
 * {
   box-sizing: border-box;
+  background: transparent;
+}
+
+html {
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(56,78,119,1) 67%, rgba(56,78,119,1) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
 }
 
 body {

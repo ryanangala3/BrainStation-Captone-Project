@@ -3,7 +3,7 @@
 // @use "./styles/partials/breakpoints.scss" as *;
 @use "./styles/partials/colors" as *;
 * {
-    background-color: $background-navy;
+    background: transparent;
 }
 
 .nav {
@@ -11,10 +11,9 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: $background-navy;
-        color: $primary-white;
-        border-top: 1px solid $primary-white;
-        border-bottom: 1px solid $primary-white;
+        background: transparent;
+        border-top: 1px solid $primary-grey;
+        border-bottom: 1px solid $primary-grey;
         width: 90%;
         min-height: 8rem;
         margin: 4rem auto;
@@ -31,6 +30,7 @@
     }
     &-title {
         @include font-tablet-h1;
+        color: #259F9E;
     }
     // &-subtitle__container {
     // }
