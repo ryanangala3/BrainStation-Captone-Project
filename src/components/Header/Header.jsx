@@ -8,11 +8,6 @@ const Header = () => {
         <div className="nav-link__list">
           <div className="nav-subtitle__container">
             <a href="" className="nav-link">
-              Exercises
-            </a>
-          </div>
-          <div className="nav-subtitle__container">
-            <a href="" className="nav-link">
               Log A Workout
             </a>
           </div>

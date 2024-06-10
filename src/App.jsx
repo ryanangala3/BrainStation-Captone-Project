@@ -1,11 +1,19 @@
 import HomePage from './pages/HomePage/HomePage';
+import WorkoutLogPage from './pages/WorkoutLogPage/WorkoutLogPage';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import './App.scss';
 
 
 function App() {
   return (
     <div className="App">
-      <HomePage />
+
+      <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/workouts" element={<WorkoutLogPage />} />
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }

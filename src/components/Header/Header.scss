@@ -1,6 +1,5 @@
 @use "./styles/partials/fonts.scss" as *;
-// @use "./styles/mixins/minxins.scss" as *;
-// @use "./styles/partials/breakpoints.scss" as *;
+@use "./styles/mixins/mixins.scss" as *;
 @use "./styles/partials/colors" as *;
 * {
     background: transparent;
@@ -15,12 +14,7 @@
         min-height: 8rem;
         max-width: 1480px;
         margin: 4rem auto;
-        background: rgba( 255, 255, 255, 0.1 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 4.5px );
-        -webkit-backdrop-filter: blur( 4.5px );
-        border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        @include container;
     }
     &-link__list {
         width: 25%;
@@ -34,7 +28,7 @@
     }
     &-title {
         @include font-tablet-h1;
-        color: #259F9E;
+        color: #17B585;
     }
     // &-subtitle__container {
     // }

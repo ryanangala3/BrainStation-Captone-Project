@@ -129,7 +129,7 @@ API Requests:
  - Get Request To get Exercises 
  - Put Request to Create and Update User's Workouts
 
-Fix Potential Bugs, Responsiveness
+Fix Potential Bugs
 
 Demo Day
 
