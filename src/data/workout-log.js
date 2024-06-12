@@ -1,7 +1,7 @@
 export default [
     {
       "id": 1,
-      "duration": "60 minutes",
+      "duration": "60",
       "workout_name": "Weight Lifting",
       "date": "2024-06-04",
       "exercises": [
@@ -30,19 +30,8 @@ export default [
     },
     {
       "id": 2,
-      "duration": "45 minutes",
+      "duration": "45",
       "workout_name": "Cycling",
-      "date": "2024-06-02",
-      "exercises": [
-        {
-          "type": "Cardio"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "duration": "20 minutes",
-      "workout_name": "Yoga",
       "date": "2024-06-03",
       "exercises": [
         {
@@ -51,8 +40,19 @@ export default [
       ]
     },
     {
+      "id": 3,
+      "duration": "20",
+      "workout_name": "Yoga",
+      "date": "2024-06-02",
+      "exercises": [
+        {
+          "type": "Cardio"
+        }
+      ]
+    },
+    {
       "id": 4,
-      "duration": "30 minutes",
+      "duration": "30",
       "workout_name": "Running",
       "date": "2024-06-01",
       "exercises": [

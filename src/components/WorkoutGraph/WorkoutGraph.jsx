@@ -21,11 +21,11 @@ const WorkoutGraph = ({ workouts }) => {
       });
   
       const x = d3.scaleUtc()
-        .domain([new Date('2024-06-01'), new Date('2024-06-30')])
+        .domain([new Date('2024-06-01'), new Date('2024-06-14')])
         .range([marginLeft, width - marginRight]);
   
       const y = d3.scaleLinear()
-        .domain([0, 120]) 
+        .domain([0, 100]) 
         .range([height - marginBottom, marginTop]);
   
       const line = d3.line()

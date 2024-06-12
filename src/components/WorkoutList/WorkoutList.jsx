@@ -16,7 +16,7 @@ function WorkoutList({workouts, selectedWorkoutId}) {
       .map(workout => (
               <li className='workout-items__container' key={workout.workout_name}>
                 <h4 className='workout-item'>{workout.workout_name}</h4>
-                <h4 className='workout-item'>{workout.duration}</h4>
+                <h4 className='workout-item'>{workout.duration} minutes</h4>
                 <h4 className='workout-item'>{workout.date}</h4>
             </li>
         ))}
