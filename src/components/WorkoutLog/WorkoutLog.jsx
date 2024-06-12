@@ -11,7 +11,7 @@ function WorkoutLog({ selectedWorkout }) {
         </div>
         <div className="log-subtitle__container">
             <h3 className='log-subtitle' key={selectedWorkout.key}>{selectedWorkout.date}</h3>
-            <h4 className='log-duration' key={selectedWorkout.key}>{selectedWorkout.duration}</h4>
+            <h4 className='log-duration' key={selectedWorkout.key}>{selectedWorkout.duration} minutes</h4>
         </div>
         <ul className="log-exercise__list">
           <li className='log-exercise__container'>
