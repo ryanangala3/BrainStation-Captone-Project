@@ -2,7 +2,6 @@
 @use "./styles/mixins/mixins.scss" as *;
 @use "./styles/partials/colors" as *;
 
-
 .log{
     &-container {
     color: $primary-white;
@@ -29,8 +28,21 @@
     &-exercise__container {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin: 0 2rem;
+        ::placeholder {
+            color: $primary-white;
+        }
     }
-
+    &-exercise__container-name {
+        @include font-tablet-h3;
+    }
 }
 
+.exercise {
+    &-name__container {
+        width: 77px;
+        text-align: left;
+        margin: 0 1rem;
+}
+}

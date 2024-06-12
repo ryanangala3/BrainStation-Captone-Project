@@ -3,7 +3,6 @@ import { useState } from 'react';
 import './WorkoutForm.scss'
 
 function WorkoutForm({ onSubmit }) {
-    // const [workouts, setWorkouts] = useState(initialWorkouts);
     const [fields, setFields] = useState([
       { exercise: '', type: '', sets: '', reps: '', duration: '' }
     ]);
@@ -54,17 +53,28 @@ function WorkoutForm({ onSubmit }) {
       </div>  
       
       <div className="workout-form__subtitle-row">
+        <div className="workout-form__subtitle-container">
         <h3 className='workout-form__subtitle'>Exercise:</h3>
+        </div>
+        <div className="workout-form__subtitle-container">
         <h3 className='workout-form__subtitle'>Type:</h3>
+        </div>
+        <div className="workout-form__subtitle-container">
         <h3 className='workout-form__subtitle'>Sets:</h3>
+        </div>
+        <div className="workout-form__subtitle-container">
         <h3 className='workout-form__subtitle'>Reps:</h3>
+        </div>
+        <div className="workout-form__subtitle-container">
         <h3 className='workout-form__subtitle'>Duration:</h3>
+        </div>
       </div>
 
       <form className='workout-form' onSubmit={handleSubmit}>
         {fields.map((field, index) => (
           <div className="input-container" key={index}>
             <input
+              className='workout-form__name-input'
               type="text"
               placeholder="Exercise"
               name="exercise"
@@ -72,6 +82,7 @@ function WorkoutForm({ onSubmit }) {
               onChange={(event) => handleChange(index, event)}
             />
             <input
+            className='workout-form__name-input'
               type="text"
               placeholder="Type"
               name="type"
@@ -79,6 +90,7 @@ function WorkoutForm({ onSubmit }) {
               onChange={(event) => handleChange(index, event)}
             />
             <input
+            className='workout-form__name-input'
               type="number"
               min={0} max={10}
               name="sets"
@@ -86,6 +98,7 @@ function WorkoutForm({ onSubmit }) {
               onChange={(event) => handleChange(index, event)}
             />
             <input
+            className='workout-form__name-input'
               type="number"
               min={0} max={99}
               name="reps"
@@ -93,15 +106,18 @@ function WorkoutForm({ onSubmit }) {
               onChange={(event) => handleChange(index, event)}
             />
             <input
-  type="text"
-  placeholder="Duration"
-  name="duration"
-  value={field.duration}
-  onChange={(event) => handleChange(index, event)}
-/>
+              className='workout-form__name-input'
+              type="text"
+              placeholder="Duration"
+              name="duration"
+              value={field.duration}
+              onChange={(event) => handleChange(index, event)}
+            />
           </div>
         ))}
-        <input className='workout-form__name-input' type="text" placeholder='Workout Name' name='workout_name' />
+        <div className="workout-name__input-container">
+        <input className='workout-form__name-input-workout' type="text" placeholder='Workout Name' name='workout_name' />
+        </div>
         <div className="button-container">
         <button className='add-more__button' type="button" onClick={handleAddFields}>Add More</button>
         <button className='submit-button' type="submit">Submit</button>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import axios from 'axios';
 import "./WorkoutLog.scss";
 
 function WorkoutLog({ selectedWorkout }) {
@@ -16,17 +15,33 @@ function WorkoutLog({ selectedWorkout }) {
         </div>
         <ul className="log-exercise__list">
           <li className='log-exercise__container'>
-          <h4 className='exercise-name'>Exercise:</h4>
+            <div className="exercise-name__container">
+            <h4 className='exercise-name'>Exercise:</h4>
+            </div>
+            <div className="exercise-name__container">
                 <h4 className='exercise-name'>Type:</h4>
+                </div>
+            <div className="exercise-name__container">
                 <h4 className='exercise-name'>Sets:</h4>
+                </div>
+            <div className="exercise-name__container">
                 <h4 className='exercise-name'>Reps:</h4>
+                </div>
           </li>
         {selectedWorkout.exercises.map(exercise => (
               <li className='log-exercise__container' key={exercise.exercise_name}>
+                <div className="exercise-name__container">
                 <h4 className='exercise-name'>{exercise.exercise_name}</h4>
+                </div>
+                <div className="exercise-name__container">
                 <h4 className='exercise-name'>{exercise.type}</h4>
+                </div>
+                <div className="exercise-name__container">
                 <h4 className='exercise-name'>{exercise.sets}</h4>
+                </div>
+                <div className="exercise-name__container">
                 <h4 className='exercise-name'>{exercise.reps}</h4>
+                </div>
             </li>
         ))}
     </ul>
