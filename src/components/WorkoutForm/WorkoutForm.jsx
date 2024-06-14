@@ -33,7 +33,7 @@ function WorkoutForm({ onSubmit }) {
       workout_name: event.target.workout_name.value,
       date: currentDate,
       exercises: fields.map((field) => ({
-        exercise: field.exercise,
+        exercise_name: field.exercise,
         type: field.type,
         sets: field.sets,
         reps: field.reps,
@@ -41,7 +41,10 @@ function WorkoutForm({ onSubmit }) {
       })),
     };
 
-    totalDuration = newWorkout.exercises.reduce((sum, exercise) => sum + parseInt(exercise.duration), 0);
+    totalDuration = newWorkout.exercises.reduce(
+      (sum, exercise) => sum + parseInt(exercise.duration),
+      0
+    );
 
     newWorkout.duration = totalDuration;
     console.log(totalDuration);
@@ -99,6 +102,7 @@ function WorkoutForm({ onSubmit }) {
             <input
               className="workout-form__name-input"
               type="number"
+              placeholder="# of sets"
               min={0}
               max={10}
               name="sets"
@@ -108,6 +112,7 @@ function WorkoutForm({ onSubmit }) {
             <input
               className="workout-form__name-input"
               type="number"
+              placeholder="# of reps"
               min={0}
               max={99}
               name="reps"
@@ -117,8 +122,8 @@ function WorkoutForm({ onSubmit }) {
             <input
               className="workout-form__name-input"
               type="text"
-              placeholder="Duration"
-              name="duration (minutes)"
+              placeholder="(minutes)"
+              name="duration"
               value={field.duration}
               onChange={(event) => handleChange(index, event)}
             />
