@@ -11,7 +11,7 @@ import Footer from "../../components/Footer/Footer.jsx";
 
 function WorkoutLogPage() {
   const [workouts, setWorkouts] = useState(data);
-  const [selectedWorkout, setSelectedWorkout] = useState(data[0]);
+  // const [selectedWorkout, setSelectedWorkout] = useState(data[0]);
 
   useEffect(() => {
     const storedWorkouts =
