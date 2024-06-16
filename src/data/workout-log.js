@@ -1,4 +1,4 @@
-export default [
+const workoutLogData = [
   {
     id: 1,
     duration: "60",
@@ -196,3 +196,5 @@ export default [
     ],
   },
 ];
+
+export default workoutLogData;
