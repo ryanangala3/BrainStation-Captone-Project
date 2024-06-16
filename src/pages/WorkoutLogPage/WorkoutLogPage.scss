@@ -1,0 +1,13 @@
+@use "./styles/partials/fonts.scss" as *;
+@use "./styles/mixins/mixins.scss" as *;
+@use "./styles/partials/colors" as *;
+
+
+
+.workout-log__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}

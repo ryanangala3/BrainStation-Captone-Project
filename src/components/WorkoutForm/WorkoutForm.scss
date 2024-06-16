@@ -1,0 +1,89 @@
+@use "./styles/partials/fonts.scss" as *;
+@use "./styles/mixins/mixins.scss" as *;
+@use "./styles/partials/colors" as *;
+
+.workout-form{
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 4rem auto;
+        padding: 0 2rem;
+        @include container;
+    }
+    &__title {
+        @include font-tablet-h1;
+        color: $primary-white;
+        text-align: center
+    }
+    &__subtitle {
+        @include font-tablet-h3;
+        color: $primary-white;
+        &-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-container {
+            width: 120px;
+        }
+    }
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.add-more__button {
+    border-radius: 4px;
+    border: 1px solid $primary-white;
+    background-color: #17B585;
+    color: $primary-white;
+    padding: .5rem 1rem;
+    @include font-tablet-p2;
+}
+.submit-button {
+    border-radius: 4px;
+    border: 1px solid #17B585;
+    background-color: #fff;
+    color: #17B585;
+    padding: .5rem 1rem;
+    @include font-tablet-p2;
+}
+
+.workout-form__name {
+    &-input-workout{
+    width: 8rem;
+    border-radius: 4px;
+    color: $primary-white;
+    padding: .5rem 1rem;
+    }
+    &-input {
+    width: 8rem;
+    border-radius: 4px;
+    color: $primary-white;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    ::placeholder {
+        color: #fff;
+    }
+}
+}
+
+.workout-name__input{
+
+    &-container {
+    display: flex;
+    justify-content: center;
+}
+}

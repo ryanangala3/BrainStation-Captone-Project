@@ -1,0 +1,13 @@
+@use "./styles/partials/colors" as *;
+@use "./styles/partials/fonts.scss" as *;
+
+.footer {
+    background: transparent;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    &-text {
+        color: $primary-white;
+    }
+}

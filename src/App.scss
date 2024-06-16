@@ -1,0 +1,53 @@
+@use "../styles/partials/fonts" as *;
+@use "../styles/mixins/mixins.scss" as *;
+@use "../styles/partials/colors" as *;
+
+* {
+  box-sizing: border-box;
+  background: transparent;
+}
+
+html {
+  background-color: #111927;
+  background-image: 
+    radial-gradient(at 47% 33%, #105b44 0, transparent 59%), 
+    radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+h1 {
+  @include font-mobile-h1;
+
+}
+
+h2 {
+  @include font-mobile-h2;
+}
+
+h3 {
+  @include font-mobile-h3;
+}
+
+h4 {
+  @include font-mobile-h4;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+
+li {
+  list-style-type: none;
+}

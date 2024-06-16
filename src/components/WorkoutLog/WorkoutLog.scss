@@ -1,0 +1,45 @@
+@use "./styles/partials/fonts.scss" as *;
+@use "./styles/mixins/mixins.scss" as *;
+@use "./styles/partials/colors" as *;
+
+
+.log{
+    &-container {
+    color: $primary-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 30%;
+    height: 540px;
+    @include container;
+    }
+    &-subtitle__container {
+        @include font-tablet-h1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &-exercise__list {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    &-exercise__container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 2rem;
+
+    }
+
+}
+
+.exercise {
+    &-name__container {
+        width: 77px;
+        text-align: left;
+        margin: 0 1rem;
+}
+}

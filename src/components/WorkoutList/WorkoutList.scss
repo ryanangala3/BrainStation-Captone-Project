@@ -1,0 +1,29 @@
+@use "./styles/partials/fonts.scss" as *;
+@use "./styles/mixins/mixins.scss" as *;
+@use "./styles/partials/colors" as *;
+
+.workout{
+
+    &-list__title {
+        @include font-tablet-h1;
+        color: $primary-white;
+        text-align: center;
+    }
+    &-list__container {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 4rem auto;
+        @include container;
+    }
+    &-items__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &-item {
+        width: 5.5rem;
+        @include font-tablet-h3;
+        color: $primary-white;
+    }
+}
